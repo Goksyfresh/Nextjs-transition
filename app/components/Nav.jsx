@@ -8,8 +8,8 @@ const Nav = () => {
     function slideInOut() {
           document.documentElement.animate(
             [
-              { opacity: 1, transform: "translateY(0)" },
-              { opacity: 0.2, transform: "translateY(-35%)" },
+              { opacity: 1, transform: "translateX(0)" },
+              { opacity: 0.2, transform: "translateX(-35%)" },
             ],
             {
               duration:1500,
