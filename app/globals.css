@@ -1,0 +1,127 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg: #1a1a1a;
+  --copy: #fff
+}
+
+body{
+  font-family: 'Neue Haas Grotesk Display Pro';
+  background-color: #000;
+  color: var(--copy);
+
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75em;
+}
+.links{
+  display: flex;
+  gap: 2em;
+}
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color:var(--copy);
+  font-family: "Akkurat Mono";
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.home{
+  width: 100vw;
+  height: 100svh;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home h1{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: var(--copy);
+  font-size: 20vw;
+  font-weight: bolder;
+  letter-spacing: -0.5rem;
+  line-height: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.home h1 .char{
+  position:relative;
+  will-change: transform;
+}
+
+.projects{
+  width:100vw;
+  height: 100%;
+  background-color: var(--bg);
+  min-height: 100svh;
+  padding: 20em 1em;
+}
+
+.images{
+  width:30%;
+  margin:0 auto;
+  display:flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.info{
+  width: 100vw;
+  height:100vh;
+  min-height: 100svh;
+  background-color: var(--bg);
+  display: flex;
+}
+.col{
+  flex:1
+}
+
+.col:nth-child(2){
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col p{
+  font-weight:500;
+  font-size: 2rem;
+  color: var(--copy);
+
+}
+
+.col p .line{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.col p .line span{
+  position: relative;
+  will-change: transform;
+}
