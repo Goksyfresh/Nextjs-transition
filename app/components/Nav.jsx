@@ -22,11 +22,11 @@ const Nav = () => {
           document.documentElement.animate(
             [
               {
-                clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+                clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)"
               },
               {
-                clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-              },
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+              }
             ],
             {
               duration:1500,
